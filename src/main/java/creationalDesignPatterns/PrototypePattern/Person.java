@@ -20,66 +20,73 @@ Person copy3 = new Person("Srinivas" , "react developer", "Hyderabad", 5);
 
  */
 
-public class Person implements  Cloneable{
-    private String name;
-    private String role;
-    private String location;
-    private int experience;
+public class Person implements Cloneable {
+  private String name;
+  private String role;
+  private String location;
+  private int experience;
 
-    public Person(String name,String role, String location,int experience){
-        this.name = name;
-        this.role = role;
-        this.location = location;
-        this.experience = experience;
-    }
+  public Person(String name, String role, String location, int experience) {
+    this.name = name;
+    this.role = role;
+    this.location = location;
+    this.experience = experience;
+  }
 
-    public Person clone() throws CloneNotSupportedException {
-        try{
-            return (Person)super.clone();
-        }catch (CloneNotSupportedException e){
-            return null;
+  public Person clone() throws CloneNotSupportedException {
+    try {
+      return (Person) super.clone();
+    } catch (CloneNotSupportedException e) {
+      return null;
     }
-    }
+  }
 
-    public String getName() {
-        return name;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public String getRole() {
-        return role;
-    }
+  public String getRole() {
+    return role;
+  }
 
-    public String getLocation() {
-        return location;
-    }
+  public String getLocation() {
+    return location;
+  }
 
-    public int getExperience() {
-        return experience;
-    }
+  public int getExperience() {
+    return experience;
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public void setRole(String role) {
-        this.role = role;
-    }
+  public void setRole(String role) {
+    this.role = role;
+  }
 
-    public void setLocation(String location) {
-        this.location = location;
-    }
+  public void setLocation(String location) {
+    this.location = location;
+  }
 
-    public void setExperience(int experience) {
-        this.experience = experience;
-    }
+  public void setExperience(int experience) {
+    this.experience = experience;
+  }
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", role='" + role + '\'' +
-                ", location='" + location + '\'' +
-                ", experience=" + experience +
-                '}';
-    }
+  @Override
+  public String toString() {
+    return "Person{"
+        + "name='"
+        + name
+        + '\''
+        + ", role='"
+        + role
+        + '\''
+        + ", location='"
+        + location
+        + '\''
+        + ", experience="
+        + experience
+        + '}';
+  }
 }

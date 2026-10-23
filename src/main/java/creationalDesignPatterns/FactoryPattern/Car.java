@@ -1,5 +1,5 @@
 package creationalDesignPatterns.FactoryPattern;
 
 public interface Car {
-    public void assemble();
+  public void assemble();
 }

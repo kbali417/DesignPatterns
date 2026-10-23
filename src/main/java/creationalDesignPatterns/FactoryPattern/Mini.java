@@ -1,9 +1,9 @@
 package creationalDesignPatterns.FactoryPattern;
 
-public class Mini implements Car{
+public class Mini implements Car {
 
-    @Override
-    public void assemble(){
-        System.out.println("Mini -- assembling !");
-    }
+  @Override
+  public void assemble() {
+    System.out.println("Mini car is -- assembling !");
+  }
 }
